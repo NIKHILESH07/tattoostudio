@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*------main--------*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: left;
+
+}
+.nav-links ul li{
+    align-items: center;
+    list-style: none;
+    display: inline-block;
+    padding: 15px 30px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(243, 149, 25, 0.87);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%,-10%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    margin: 20px 0px 0px;
+    font-size: 15px;
+    color: white;
+}
+.def img{
+    width: 400px;
+    padding: 0% 10%;
+}
+
+/*-------course-------*/
+.course{
+    width: 80%;
+    text-align: center;
+    padding-top: 100px;
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#n {
+    color: white;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.course p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+    color: rgb(102, 102, 102);
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 30%;
+    background: #dbdbdb;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.course-col:hover{
+    box-shadow: 0 0 50px 0px rgba(243, 149, 25, 0.87);
+}
+@media (max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+}
+.campus{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    background-color: black;
+    padding-top: 50px;
+}
+.campus p{
+    color: white;
+}
+.campus-col{
+    flex-basis: 31%;
+/*-----    border-radius: 10px;-------*/
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.layer:hover{
+    background: rgba(139, 137, 137, 0.5);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 5000;
+    font-size: 20px;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1; 
+}
+.mapo{
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+}
+.map{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.map h1{
+    margin-bottom: 30px;
+}
+iframe{
+    width: 80%;
+    height: 500px;
+    margin-bottom: 50px;
+    filter: invert(100%);
+}
+.artist img{
+    width: 400px;
+    padding: 2% 10%;
+}
+.contact{
+    width: 50%;
+    position: absolute;
+    text-align: left;
+    display: inline;
+    transform: translate(-10%,75%);
+    margin-top: 20px;
+}
+.contact h1{
+    font-size: 50px;
+}
+.contact p{
+    margin: 15px 0px 0px;
+    font-size: 18px;
+}
+div.artist{
+    display: inline;
+}
+div.with{
+    width: 50%;
+    position: absolute;
+    text-align: left;
+    display: inline;
+    transform: translate(-10%,-10%);
+    margin-top: 250px;
+}
+div.us{
+    width: 50%;
+    position: absolute;
+    text-align: left;
+    display: inline;
+    transform: translate(-10%,-10%);
+    margin-top: 320px;
+}
+div.us ul li{
+    list-style: none;
+    padding: 5px;
+}
+section.end{
+    min-height: 80vh;
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+/*----------social--------*/
+.social{
+    z-index: 5;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+.social ul li{
+    list-style: none;
+    padding: 5px;
+}
+.social ul li img{
+    width: 40px;
+    height: 40px;
+}
+
